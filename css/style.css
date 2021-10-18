@@ -1433,7 +1433,6 @@ html[dir=rtl] .sub-list{
     nav {
         display: block;
         position: fixed;
-        left: -100%;
         top: 0;
         bottom: 0;
         width: 90%;
@@ -1443,13 +1442,13 @@ html[dir=rtl] .sub-list{
         z-index: 200;
         overflow-y: auto;
     }
-    html[dir=ltr] .nav {
+    html[dir=ltr] nav {
         left: -100%;
     }
-    html[dir=rtl] .nav {
+    html[dir=rtl] nav {
         right: -100%;
     }
-    html[dir=ltr].reset-left {
+    html[dir=ltr] .reset-left {
         left: 0;
     }
     html[dir=rtl] .reset-left {
