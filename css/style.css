@@ -399,7 +399,7 @@ html[dir=rtl] .search-button {
       /* display: -webkit-box;
       display: -ms-flexbox;
       display: flex; */
-      bottom: 25px;
+      bottom: 20px;
     }
   }
   
@@ -408,7 +408,7 @@ html[dir=rtl] .search-button {
     height: 5px;
     background-color: #000;
     opacity: 0.5;
-    margin: 0 5px;
+    margin: 0 3px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     outline: none !important;
@@ -547,7 +547,7 @@ html[dir=rtl] .search-button {
     height: 5px;
     background-color: #000;
     opacity: 0.5;
-    margin: 0 5px;
+    margin: 0 3px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     outline: none !important;
@@ -686,8 +686,14 @@ html[dir=rtl] .product .product-hint{
 }
 .product .product-button{
     text-decoration: none;
-    display: inline-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     border-radius: 23px;
     max-width: 151px;
@@ -778,7 +784,7 @@ html[dir=rtl] .product .product-hint{
     height: 5px;
     background-color: #000;
     opacity: 0.5;
-    margin: 0 5px;
+    margin: 0 3px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     outline: none !important;
@@ -876,7 +882,7 @@ html[dir=ltr] .features-box .features-span{
     height: 5px;
     background-color: #000;
     opacity: 0.5;
-    margin: 0 5px;
+    margin: 0 3px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     outline: none !important;
@@ -1422,7 +1428,7 @@ html[dir=rtl] .sub-list{
     display: none;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 15px;
+    padding: 20px 15px 0;
 }
 .nav-head .close-btn {
     color: #3f0d97;
@@ -1475,7 +1481,6 @@ html[dir=rtl] .sub-list{
         background-color: #fff;
         width: 100%;
         max-height: calc(100vh - 40px);
-        padding-top: 16px;
         overflow-y: auto;
     }
     .big-menu{
