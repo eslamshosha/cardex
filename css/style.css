@@ -188,8 +188,8 @@ header{
 }
 .search-button{
     position: absolute;
-    top: 50%;
-    right: 6px;
+    top: 49%;
+    right: 7px;
     transform: translateY(-50%);
     background-color: #2290c9;
     border-radius: 50%;
@@ -210,7 +210,7 @@ header{
 }
 html[dir=rtl] .search-button {
     right: auto;
-    left: 6px;
+    left: 7px;
 }
 .icons-cont{
     display: flex;
@@ -223,6 +223,7 @@ html[dir=rtl] .search-button {
 }
 
 .register-section .add-to{
+    cursor: pointer;
     font-size: 18px;
     position: relative;
     display: flex;
@@ -478,7 +479,12 @@ html[dir=rtl] .search-button {
     transform: translate(-50%, -50%);
     max-width: 100%;
     max-height: 100%;
-  }
+}
+@media (max-width: 400px){
+    .brand-img img{
+        max-width: 85%;
+    }
+}
 
 .brand-slider .swiper-btn {
     position: absolute;
@@ -513,11 +519,11 @@ html[dir=rtl] .search-button {
 }
   
 .brand-slider .swiper-btn.swiper-btn-next {
-    left: -77px;
+    left: -40px;
 }
   
 .brand-slider .swiper-btn.swiper-btn-prev {
-    right: -77px;
+    right: -40px;
 }
   
 .brand-slider .swiper-pagination {
@@ -604,7 +610,7 @@ html[dir=rtl] .search-button {
     justify-content: center;
     overflow: hidden;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 12px;
 }
 .product .product-img img{
     width: 100%;
@@ -617,14 +623,14 @@ html[dir=rtl] .search-button {
             transform: scale(1.05);
 }
 html[dir=rtl] .product .product-hint{
-    right: 3%;
+    right: 4%;
     left: 0;
 }
 .product .product-hint{
     font-size: 12px;
     font-weight: 700;
     color: #fff;
-    background-color: #b71c1c;
+    background-color: #f72f2f;
     line-height: 20px;
     text-align: center;
     width: 72px;
@@ -632,7 +638,7 @@ html[dir=rtl] .product .product-hint{
     border-radius: 12px;
     position: absolute;
     top: 2%;
-    left: 3%;
+    left: 4%;
     transition: all 0.3s ease-in-out;
 }
 .product{
@@ -660,7 +666,7 @@ html[dir=rtl] .product .product-hint{
     font-weight: 400;
     font-size: 16px;
     text-decoration: line-through;
-    color: #8c70be;
+    color: #bba2e9;
 }
 .product .product-name{
     display: block;
@@ -752,11 +758,11 @@ html[dir=rtl] .product .product-hint{
 }
   
 .product-slider .swiper-btn.swiper-btn-next {
-    left: -77px;
+    left: -40px;
 }
   
 .product-slider .swiper-btn.swiper-btn-prev {
-    right: -77px;
+    right: -40px;
 }
   
 .product-slider .swiper-pagination {
@@ -807,7 +813,23 @@ html[dir=rtl] .product .product-hint{
 .product-four .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
     background-color: #2290c9;
 }
-
+@media (max-width: 767px){
+    .product-content .price-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .product-section .product-head {
+        font-size: 22px;
+    }
+    .product .product-content{
+        padding: 20px 8px 0;
+    }
+}
+@media (max-width: 340px){
+    .product .product-button {
+        font-size: 12px;
+    }
+}
 /*                             product section                          */ 
 
 /*                         feature section                    */
@@ -822,9 +844,9 @@ html[dir=rtl] .product .product-hint{
 }
 @media (min-width: 1199px) {
     .features {
-     padding-inline-start: 25px;
+        padding-inline-start: 25px;
     }
-  }
+}
 .features a{
     text-decoration: none;
 }
@@ -1137,17 +1159,21 @@ html[dir='rtl'] .arrow-top {
 /*                    menu in phone size                      */
 
 @media (max-width: 1199px){
+    header{
+        margin-bottom: 0;
+    }
     .lang-cont{
         display: none;
     }
-    .register-section .hide-sm{
+    .register-section .hide-sm,
+    .hide-sm{
         display: none;
     }
     .top-header .img-logo img{
-        max-width: 100px;
+        max-width: 150px;
     }
     .nav-head .img-logo img{
-        max-width: 100px;
+        max-width: 150px;
     }
     .first-header{
         flex-wrap: wrap;
@@ -1182,10 +1208,8 @@ html[dir='rtl'] .arrow-top {
     }
     .menu-list{
         margin-inline-start: 0;
-        padding: 0 28px;
     }
     .big-menu .lang-section .lang-word{
-        padding: 0 28px;
         color: #3f0d97;
         font-size: 16px;
         font-weight: 500;
@@ -1209,15 +1233,13 @@ html[dir='rtl'] .arrow-top {
         align-items: center;
         justify-content: space-between;
         color: #3f0d97;
-        padding: 0 28px;
         line-height: 34px;
     }
     .big-menu .dropdown-content {
         background-color: transparent;
-        text-align: left;
+        text-align: start;
         min-width: 100%;
         padding: 10px 0 0;
-        padding-inline-start: 28px;
         box-shadow: none;
         position: static;
         visibility: visible;
@@ -1225,15 +1247,15 @@ html[dir='rtl'] .arrow-top {
         left: auto;
         transform: none;
     }
-    .dropdown-content a{
+    .big-menu .chevron-down{
+        padding: 0;
+    }
+    .big-menu .dropdown-content a{
         padding: 2px 0 2px;
         color: #3f0d97;
     }
     .dropdown-content a:last-of-type{
         padding-bottom: 0;
-    }
-    html[dir=rtl] .big-menu .dropdown-content{
-        text-align: right;
     }
     .dropdown{/*to make flex work*/
         display: block;
@@ -1310,17 +1332,7 @@ html[dir='rtl'] .arrow-top {
 }
 /*                             footer                          */
 }  
-@media (max-width: 767px){
-    .product-content .price-box {
-        display: flex;
-        flex-direction: column;
-    }
-}
-@media (max-width: 340px){
-    .product .product-button {
-        font-size: 12px;
-    }
-}
+
 
 
 /*overlay*/
@@ -1512,8 +1524,14 @@ html[dir=rtl] .sub-list{
         display: flex;
         align-items: center;
     }
+    .menu-name{
+        font-weight: 500;
+    }
     .btn-div .menu-name {
         color: #3f0d97;
+    }
+    .menu-name span{
+        display: none;
     }
     .cats-dispaly {
         background-color: transparent;
@@ -1541,9 +1559,6 @@ html[dir=rtl] .sub-list{
     .sub-list {
         left: auto;
     }
-    .sub-list>ul>.cat-li>.cat-anchor {
-        padding: 0 28px;
-    }
     .has-level-2>.cat-anchor.active {
         color: #138aa8;
     }
@@ -1551,18 +1566,16 @@ html[dir=rtl] .sub-list{
     .btn-div.active:after {
         content: "";
     }
+    /*transfer from plus to miuns*/
     .btn-div:after {
         margin: 0;
-        font-size: 16px;
+        font-size: 15px;
         content: "";
     }
     .has-level-2>.cat-anchor.active>i::before {
         content: "";
     }
-    /*transfer from plus to miuns*/
-    .sub-list>ul>.cat-li>.cat-anchor {
-        padding: 0 28px;
-    }
+    
     /*transfer sub list into static poistion and reset top*/
     .sub-list { 
         background-color: transparent;
