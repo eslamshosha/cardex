@@ -195,10 +195,15 @@ header{
     border-radius: 50%;
     width: 37px;
     height: 37px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
-    text-align: center;
     color: #fff;
     border: none;
     font-size: 16px;
@@ -242,8 +247,14 @@ html[dir=rtl] .search-button {
     right: -10px;
     width: 16px;
     height: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background-color: #2290c9;
     color: #fff;
@@ -1438,7 +1449,7 @@ html[dir=rtl] .sub-list{
     html[dir=rtl] .nav {
         right: -100%;
     }
-    html[dir=ltr] .reset-left {
+    html[dir=ltr].reset-left {
         left: 0;
     }
     html[dir=rtl] .reset-left {
@@ -1521,12 +1532,12 @@ html[dir=rtl] .sub-list{
     }
      /*transfer from plus to miuns*/
     .btn-div.active:after {
-        content: "";
+        content: "";
     }
     .btn-div:after {
         margin: 0;
         font-size: 16px;
-        content: "";
+        content: "";
     }
     .has-level-2>.cat-anchor.active>i::before {
         content: "";

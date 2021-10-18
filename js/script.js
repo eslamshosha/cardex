@@ -5,7 +5,7 @@
     //slide down menu
     $('.btn-div').click(function () {
         $(".cats-dispaly").slideToggle(400);
-        $(".overlay-box2").fadeToggle(300);
+        $(".overlay-box2").fadeIn(300);
         if ($(window).width() <= 1199) {
             $(".overlay-box2").hide();
             $(this).toggleClass("active")
