@@ -1274,6 +1274,12 @@ html[dir='rtl'] .arrow-top {
         flex-direction: column;
     }
 }
+@media (max-width: 340px){
+    .product .product-button {
+        font-size: 12px;
+    }
+}
+
 
 /*overlay*/
 .overlay-box,
