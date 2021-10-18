@@ -1383,6 +1383,11 @@ html[dir='rtl'] .arrow-top {
     color: #3f0d97;
     transition: all 0.3s ease-in-out;
 }
+@media (min-width: 1199px){
+    html[dir=ltr] .cat-anchor {
+        font-size: 15px;
+    }
+}
 .sub-list .cat-anchor {
     font-size: 15px;
     font-weight: 400;
