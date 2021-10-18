@@ -834,7 +834,6 @@ html[dir=rtl] .product .product-hint{
 .features-box figure{
     width: 54px;
     height: 39px;
-    margin-bottom: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -846,13 +845,17 @@ html[dir=rtl] .product .product-hint{
     margin: 0;
     margin-bottom: 6px;
 }
+@media (min-width: 1500px){
+    .features-box .features-span{
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+    }
+}
 .features-box .features-span{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: #fff;
-} 
-html[dir=ltr] .features-box .features-span{
-    font-size: 14px;
 }
 .feature-section {
     position: relative;
@@ -1268,6 +1271,9 @@ html[dir='rtl'] .arrow-top {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    .features-box figure{
+        margin-bottom: 8px;
     }
     .features-box .features-icon{
         margin-bottom: 10px;
