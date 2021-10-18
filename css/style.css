@@ -1233,7 +1233,7 @@ html[dir='rtl'] .arrow-top {
         align-items: center;
         justify-content: space-between;
         color: #3f0d97;
-        line-height: 34px;
+        min-height: 34px;
     }
     .big-menu .dropdown-content {
         background-color: transparent;
@@ -1375,18 +1375,13 @@ html[dir='rtl'] .arrow-top {
 .cat-anchor {
     padding: 0 5px;
     max-width: 100%;
-    line-height: 38px;
+    min-height: 38px;
     display: flex;
     align-items: center;
     font-size: 16px;
     font-weight: 500;
     color: #3f0d97;
     transition: all 0.3s ease-in-out;
-}
-@media (min-width: 1199px){
-    html[dir=ltr] .cat-anchor {
-        font-size: 15px;
-    }
 }
 .sub-list .cat-anchor {
     font-size: 15px;
