@@ -695,6 +695,8 @@ html[dir=rtl] .product .product-hint{
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    text-align: center;
+    margin: 0 auto;
     border-radius: 23px;
     max-width: 151px;
     width: 100%;
