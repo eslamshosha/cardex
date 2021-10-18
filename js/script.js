@@ -155,7 +155,7 @@
                 spaceBetween: 15,
             },
             992: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 15,
             },
             1199: {
@@ -189,7 +189,7 @@
                 spaceBetween: 15,
             },
             992: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 15,
             },
             1199: {
@@ -223,7 +223,7 @@
                 spaceBetween: 15,
             },
             992: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 15,
             },
             1199: {
@@ -257,7 +257,7 @@
                 spaceBetween: 15,
             },
             992: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 15,
             },
             1199: {
