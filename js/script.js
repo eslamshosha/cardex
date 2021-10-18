@@ -5,15 +5,15 @@
     //slide down menu
     $('.btn-div').click(function () {
         $(".cats-dispaly").slideToggle(400);
-        $(".overlay-box").fadeToggle(300);
+        $(".overlay-box2").fadeToggle(300);
         if ($(window).width() <= 1199) {
-            $(".overlay-box").hide();
+            $(".overlay-box2").hide();
             $(this).toggleClass("active")
         }
     });
-    $('.overlay-box').click(function () {
+    $('.overlay-box2').click(function () {
         $(".cats-dispaly").slideToggle(400);
-        $(".overlay-box").fadeOut(300);
+        $(".overlay-box2").fadeOut(300);
     });
 	//phone size menu onclick
 	if ($(window).width() <= 1199) {
@@ -53,22 +53,6 @@
 		
 		})
     }
-    //This is to Open Search Box 
-	$(".search-icon").click(function() {
-		$(".search-icon .search-toggle").toggleClass("open-search")
-		$(".search-icon .search-toggle").toggleClass("close-search")
-		$(".search-cont").toggleClass("search-open");
-		$(".overlay-box").fadeToggle(500);
-
-	});
-
-	$(".overlay-box").click(function() {
-		$(".search-icon .search-toggle").addClass("open-search")
-		$(".search-icon .search-toggle").removeClass("close-search")
-		$(".search-cont").removeClass("search-open");
-		$(".overlay-box").fadeOut(500);
-	});
-    
     // //main Slider Carousel
     ///////// ** main** /////////
     var specials = new Swiper('.main-slider .swiper-container', {
@@ -111,7 +95,7 @@
         },
         breakpoints: {
             0: {
-                slidesPerView: 3,
+                slidesPerView: 2,
                 spaceBetween: 15,
             },
             767: {

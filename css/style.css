@@ -195,6 +195,10 @@ header{
     border-radius: 50%;
     width: 37px;
     height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color: #fff;
     border: none;
     font-size: 16px;
@@ -808,6 +812,14 @@ html[dir=rtl] .product .product-hint{
 .features-box .features-text{
     margin-inline-start: 15px;
 }
+.features-box figure{
+    width: 54px;
+    height: 39px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .features-box .features-h{
     font-size: 18px;
     font-weight: 700;
@@ -1121,7 +1133,7 @@ html[dir='rtl'] .arrow-top {
     .search-section{
         order: 3;
         width: 100%;
-        margin-top: 25px;
+        margin-top: 15px;
     }
     .register-section{
         margin-inline-end: 0;
@@ -1410,7 +1422,7 @@ html[dir=rtl] .sub-list{
     nav {
         display: block;
         position: fixed;
-        left: -200%;
+        left: -100%;
         top: 0;
         bottom: 0;
         width: 90%;
@@ -1420,22 +1432,23 @@ html[dir=rtl] .sub-list{
         z-index: 200;
         overflow-y: auto;
     }
-    .reset-left {
+    html[dir=ltr] .nav {
+        left: -100%;
+    }
+    html[dir=rtl] .nav {
+        right: -100%;
+    }
+    html[dir=ltr] .reset-left {
         left: 0;
     }
-    html[dir=rtl] .nav{
-        left: 0;
-        right: -200%;
-    }
-    .reset-left {
-        left: 0;
-    }
-    html[dir=rtl] 
-    .reset-left {
+    html[dir=rtl] .reset-left {
         right: 0;
     }
     .nav-head {
         display: flex;
+    }
+    .nav-header{
+        background-color: #fff;
     }
     nav .container {
         padding: 0;
@@ -1469,6 +1482,8 @@ html[dir=rtl] .sub-list{
         line-height: 1.4 !important;
         padding: 0;
         margin-bottom: 17px;
+        display: flex;
+        align-items: center;
     }
     .btn-div .menu-name {
         color: #3f0d97;
@@ -1481,6 +1496,7 @@ html[dir=rtl] .sub-list{
         top: auto;
         bottom: auto;
         display: block;
+        display: none;
         transition: none;
     }
     .cats-div, .sub-list{
