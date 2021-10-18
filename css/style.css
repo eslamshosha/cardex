@@ -1236,11 +1236,16 @@ html[dir='rtl'] .arrow-top {
     .big-menu .lang-section img{
         display: none;
     }
-    .cat-down,
     .big-menu .lang-section .lang-word{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
-        /* justify-content: center; */
+        /* -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; */
     }
     .header-icons a.add-to{
         margin-inline-end: 0px;
